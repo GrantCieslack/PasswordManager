@@ -53,7 +53,7 @@ public class PasswordLogin {
         }
         tries--;
         if(tries==0){
-            return;
+            break;
         }
         }
     }

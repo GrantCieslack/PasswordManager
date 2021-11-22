@@ -5,7 +5,7 @@ import java.io.File;
 
 public class PasswordReadWrite {
 
-    private static final String DATA_FILE = "mymedia.txt";
+    private static final String DATA_FILE = "passwords.txt";
     private static Scanner in;
     private static BufferedWriter out;
 
