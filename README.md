@@ -1,2 +1,0 @@
-# PasswordManager
-Be Optomistic :D
