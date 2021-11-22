@@ -6,12 +6,12 @@ import java.io.File;
 public class BufferWriter {
 
     //global variables to help out
-    private static final String DATA_FILE = "mymedia.txt";
+    private static final String DATA_FILE = "data.txt";
     private static Scanner in;
     private static BufferedWriter out;
 
     //writeString
-    public static void writeString(String s) {
+    public static void writeLine(String s) {
         // check to see if out is assigned
         if (out == null) {
             try {
@@ -58,7 +58,7 @@ public class BufferWriter {
         }
     }
     //readString
-    public static String readString(){
+    public static String readLine(){
         //check to see if you are alread reading
         if(in == null){
             try{
