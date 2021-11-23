@@ -42,9 +42,6 @@ public class BufferWriter {
                 e.printStackTrace();
             }
         }
-
-
-
         //clases after the bufferedwriter is done writing to the file
         if(out!=null){
             try{

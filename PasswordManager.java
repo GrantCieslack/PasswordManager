@@ -60,9 +60,13 @@ public class PasswordManager {
     public static void viewCat(String c){
         //show category and accounts associated
         Scanner ui = new Scanner(System.in);
-        for(int i = 0; i<savedAccounts.size();i++){
-        printArray(i);
-        }
+
+        System.out.println("Which catergory would you like to find? ");
+          int i=0;
+          while(i<savedAccounts.size()){
+            if(savedAccounts[i].getCatergory().equals(c)){//why no work?
+                printArray(i);            
+            }
 
         System.out.println("Would you like to: [add] a account, [delete] a account, [change] a account");
 
