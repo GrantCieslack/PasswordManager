@@ -1,13 +1,20 @@
-import java.util.ArrayList;
-import java.util.Scanner;
 public class Categories {
-    public static void main(String[] args) {
-        
+    String title;
+    String userName;
+    String passWord;
+    String category;
+    public Categories(){
+        title = "untitled account";
+        userName = "no username";
+        passWord = "no password";
+        category = "no category";
+        System.out.println("Object Created");
     }
-    public static void CategoriesAdd(){
-        Scanner ui = new Scanner(System.in);
-        System.out.println("What would you like to call your category? ");
-        String newCategory = ui.nextLine();
-        ArrayList <String> newCategory = new ArrayList<String>();
+    public Categories(String t, String un, String pw, String c){
+        title = t;
+        userName = un;
+        passWord = pw;
+        category = c;
     }
+    
 }
