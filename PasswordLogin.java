@@ -38,6 +38,7 @@ public class PasswordLogin {
         //compare results
         //allow or deny(3 tries!)
         int tries = 3;
+        String realUser=BufferWriter.readLine();
 
         while(tries!=0){
         System.out.println("Please enter username:");
@@ -45,14 +46,11 @@ public class PasswordLogin {
         System.out.printf("Please enter password for %s:\n",username);
             String password=ui.nextLine();
         String userPass = username+","+password;
-        String realUser=BufferWriter.readLine();
         if(userPass.equals(realUser)){
             System.out.println("WELCOME!");
             PasswordManager.accessAccount();
         }
         else{
-        System.out.println(userPass.length());
-        System.out.println(realUser.length());
         tries--;
         System.out.println(tries+" tries left");
         }
