@@ -132,6 +132,7 @@ public class PasswordManager {
 
         System.out.println("Enter password of new account");
         String pw = ui.nextLine();
+        PasswordCheck.checkPass(pw);
 
         System.out.println("Enter category of new account");
         String c = ui.nextLine();
